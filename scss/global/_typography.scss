@@ -1,0 +1,105 @@
+@use "../util/" as u;
+
+@layer typography {
+  /* hanken-grotesk-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./../../assets/fonts/hanken-grotesk-v8-latin-regular.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* hanken-grotesk-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./../../assets/fonts/hanken-grotesk-v8-latin-500.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* hanken-grotesk-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./../../assets/fonts/hanken-grotesk-v8-latin-700.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* hanken-grotesk-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 800;
+    src: url("./../../assets/fonts/hanken-grotesk-v8-latin-800.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  :root {
+    --fs-72: calc(72 / 16 * 1rem);
+    --fs-56: calc(56 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --fs-24: calc(24 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-16: 1rem;
+    --fs-14: calc(14 / 16 * 1rem);
+
+    --font-size-h1: clamp(var(--fs-56), 2.25rem + 4vw, var(--fs-72));
+    --font-size-h2: clamp(var(--fs-24), 0.875rem + 2vw, var(--fs-32));
+    --font-size-h3: clamp(var(--fs-18), 0.6563rem + 1.5vw, var(--fs-24));
+    --font-size-p: clamp(var(--fs-16), 0.8438rem + 0.5vw, var(--fs-18));
+
+    --font-default: "Hanken Grotesk", sans-serif;
+  }
+
+  body {
+    font-size: var(--font-size-p);
+    font-family: var(--font-default);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+    text-wrap: balance;
+    line-height: normal;
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 800;
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+  }
+
+  p {
+    max-inline-size: 50ch;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--c-blue-800);
+  }
+
+  .attribution {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  --c-navy-50: hsl(221, 100%, 96%);
+  --c-navy-200: hsl(241, 100%, 89%);
+  --c-navy-950: hsl(224, 30%, 27%);
+  --c-blue-50: hsl(234, 71%, 97%);
+  --c-blue-800: hsl(234, 85%, 45%);
+  --c-red-50: hsl(0, 100%, 98%);
+  --c-red-400: hsl(0, 100%, 67%);
+  --c-yellow-50: hsl(38, 100%, 98%);
+  --c-yellow-400: hsl(39, 100%, 56%);
+  --c-green-50: hsl(162, 63%, 97%);
+  --c-green-500: hsl(166, 100%, 37%);
+  --c-black: hsl(0, 0%, 0%);
+  --c-white: hsl(0, 100%, 100%);
+
+  --gradient-1: linear-gradient(
+    180deg,
+    hsl(256, 72%, 46%) 0%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+  --gradient-2: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 100%
+  );
+
+  --color-bg: var(--c-navy-200);
+  --color-text: var(--c-navy-950);
+}
